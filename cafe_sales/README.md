@@ -4,5 +4,5 @@ The dataset can be accessed here: [Dataset](https://www.kaggle.com/datasets/ahme
 
 The dataset was imported from a CSV file into MySQL.
 
-Data cleaning and transformation steps are documented in `analysis.sql`.
+Data cleaning and transformation steps are documented in `02_cleaning.sql`.
 
