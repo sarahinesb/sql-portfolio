@@ -1,4 +1,5 @@
 -- Schema for customer_spending
+
 CREATE TABLE customer_data (
     name TEXT,
     age INT,
