@@ -1,9 +1,4 @@
-/*
-=========================================================
- Global Ads Case Study
- Schema Definition
-=========================================================
-*/
+-- Schema for global-ads-case-study
 
 CREATE TABLE ads_data (
     date TEXT NULL,
