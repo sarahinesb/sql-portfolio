@@ -1,9 +1,4 @@
-/*
-=========================================================
- Product Performance Case Study
- Schema Definition
-=========================================================
-*/
+-- Schema for zara_sales
 
 CREATE TABLE product_dataset (
     `Product ID` INT NULL,
