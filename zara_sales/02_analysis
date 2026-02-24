@@ -1,1 +1,165 @@
+-- =====================================================
+-- Total Revenue
+-- =====================================================
 
+SELECT 
+    SUM(`Sales Volume` * price) AS total_revenue
+FROM zara;
+
+
+-- =====================================================
+-- Total Units Sold
+-- =====================================================
+
+SELECT 
+    SUM(`Sales Volume`) AS total_units
+FROM zara;
+
+
+-- =====================================================
+-- Average Price by Section
+-- =====================================================
+
+SELECT 
+    section, 
+    ROUND(AVG(price), 2) AS avg_price
+FROM zara
+GROUP BY section;
+
+
+-- =====================================================
+-- Sales Overview by Section
+-- =====================================================
+
+SELECT 
+    section, 
+    ROUND(SUM(`Sales Volume` * price), 2) AS total_revenue,
+    SUM(`Sales Volume`) AS total_units,
+    ROUND(AVG(price), 2) AS avg_price
+FROM zara
+GROUP BY section
+ORDER BY total_revenue DESC;
+
+
+-- =====================================================
+-- Top 10 Products by Sales Volume
+-- =====================================================
+
+SELECT 
+    `Sales Volume`, 
+    terms, 
+    section, 
+    `name`
+FROM zara
+ORDER BY `Sales Volume` DESC
+LIMIT 10;
+
+
+-- =====================================================
+-- Top 10 Products by Revenue
+-- =====================================================
+
+SELECT 
+    `Sales Volume`, 
+    price, 
+    terms, 
+    section,
+    `name`,
+    ROUND(`Sales Volume` * price, 2) AS product_revenue
+FROM zara
+ORDER BY product_revenue DESC
+LIMIT 10;
+
+-- Product performance analysis:
+-- High demand for premium quality jackets for MEN. WOMEN sweaters are moderate performers.
+
+
+-- =====================================================
+-- Revenue by Category
+-- =====================================================
+
+SELECT 
+    section,
+    terms,
+    SUM(`Sales Volume` * price) AS revenue
+FROM zara
+GROUP BY section, terms
+ORDER BY revenue DESC;
+
+
+-- =====================================================
+-- Sales Volume by Category
+-- =====================================================
+
+SELECT 
+    terms,
+    section,
+    SUM(`Sales Volume`) AS total_volume
+FROM zara
+GROUP BY section, terms
+ORDER BY total_volume DESC;
+
+
+-- =====================================================
+-- Average Price by Category
+-- =====================================================
+
+SELECT 
+    terms,
+    section,
+    ROUND(AVG(price), 2) AS avg_price
+FROM zara
+GROUP BY section, terms
+ORDER BY avg_price DESC;
+
+-- Analysis:
+-- Not only Men's jackets sell the most units,
+-- but they generate the most revenue,
+-- and their average price is one of the highest.
+
+
+-- =====================================================
+-- Compare: Promoted vs Non-Promoted Products
+-- =====================================================
+
+-- Average Sales Volume
+-- Analysis: Promotion is not universally increasing volume
+
+SELECT 
+    terms,
+    section, 
+    promotion,
+    ROUND(AVG(`Sales Volume`), 2) AS avg_sales_volume
+FROM zara
+GROUP BY terms, section, promotion
+ORDER BY avg_sales_volume DESC;
+
+
+-- Average Revenue
+-- Analysis: Promotion may not be a strong performance lever
+
+SELECT 
+    terms,
+    section,
+    promotion,
+    ROUND(AVG(`Sales Volume` * price), 2) AS avg_revenue
+FROM zara
+GROUP BY terms, section, promotion
+ORDER BY avg_revenue DESC;
+
+
+-- =====================================================
+-- Seasonal vs Non-Seasonal Performance
+-- =====================================================
+
+SELECT 
+    Seasonal,
+    ROUND(SUM(`Sales Volume` * price), 2) AS total_revenue,
+    ROUND(AVG(`Sales Volume` * price), 2) AS avg_product_revenue,
+    COUNT(*) AS number_of_products
+FROM zara
+GROUP BY Seasonal;
+
+-- Analysis:
+-- Slight improvement for Seasonal products (increase by 3.5%),
+-- but it does not appear to influence revenue performance dramatically.
