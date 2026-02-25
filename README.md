@@ -9,8 +9,8 @@ This repository contains SQL projects demonstrating data analysis and database d
 - Used SQL to: Standardize and rename columns for consistency. Clean missing, blank, and invalid values (UNKNOWN, ERROR). Recalculate missing Total_Spent values. Create a trigger to automate future total calculations. Optimize and correct data types. Identify duplicate Transaction_ID records.
 
 ### 2. Customer Spending
-- Evaluated campaign effectiveness and conversion rates
-- Used aggregations, subqueries, and ranking functions
+- The Customer Spending dataset contains data on customer demographics, income levels, spending patterns, and purchasing behavior. It is designed to support data analysis, predictive modeling, and customer segmentation projects.
+- Used SQL to: 
 
 ### 3. Global Ads / Case Study
 - Evaluated campaign effectiveness and conversion rates
