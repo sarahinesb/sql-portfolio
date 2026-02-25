@@ -4,10 +4,18 @@ This repository contains SQL projects demonstrating data analysis and database d
 
 ## Projects
 
-### 1. Ecommerce Sales Analysis
+### 1. Cafe Sales
 - Analyzed revenue, customer behavior, and product performance
 - Used joins, CTEs, and window functions
 
-### 2. Marketing Campaign Analysis
+### 2. Customer Spending
+- Evaluated campaign effectiveness and conversion rates
+- Used aggregations, subqueries, and ranking functions
+
+### 3. Global Ads / Case Study
+- Evaluated campaign effectiveness and conversion rates
+- Used aggregations, subqueries, and ranking functions
+
+### 4. Zara Sales
 - Evaluated campaign effectiveness and conversion rates
 - Used aggregations, subqueries, and ranking functions
