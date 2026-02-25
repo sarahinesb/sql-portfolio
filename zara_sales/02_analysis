@@ -113,9 +113,7 @@ GROUP BY section, terms
 ORDER BY avg_price DESC;
 
 -- Analysis:
--- Not only Men's jackets sell the most units,
--- but they generate the most revenue,
--- and their average price is one of the highest.
+-- Not only Men's jackets sell the most units, but they generate the most revenue and their average price is one of the highest.
 
 
 -- =====================================================
@@ -161,5 +159,4 @@ FROM zara
 GROUP BY Seasonal;
 
 -- Analysis:
--- Slight improvement for Seasonal products (increase by 3.5%),
--- but it does not appear to influence revenue performance dramatically.
+-- Slight improvement for Seasonal products (increase by 3.5%), but it does not appear to influence revenue performance dramatically.
