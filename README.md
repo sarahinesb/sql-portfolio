@@ -5,7 +5,7 @@ This repository contains SQL projects demonstrating data analysis and database d
 ## Projects
 
 ### 1. Cafe Sales
-- Analyzed revenue, customer behavior, and product performance
+- The Dirty Cafe Sales dataset includes 10,000 simulated cafe sales transactions. It was purposely designed with missing data, inconsistencies, and errors to replicate real-world data challenges
 - Used joins, CTEs, and window functions
 
 ### 2. Customer Spending
