@@ -14,8 +14,8 @@ This repository contains SQL projects demonstrating data analysis and database d
 
 ### 3. Global Ads Performance (Google, Meta, TikTok) / Case Study
 - This dataset contains campaign-level advertising performance data from Google Ads, Meta Ads, and TikTok Ads. It is used for marketing analytics, performance optimization, budget allocation, and platform comparison analysis.
-- Used SQL to: Compare ROAS and CPA performance across platforms. Analyze revenue, clicks, conversions, and ad spend efficiency. Evaluate campaign scalability and optimization opportunities. Identify top and bottom performing campaigns.
+- Used SQL to: Compare ROAS and CPA performance across platforms. Analyze revenue, clicks, conversions, and ad spend efficiency. Evaluate campaign scalability and optimization opportunities. Track performance trends over time. Identify top and bottom performing campaigns.
 
 ### 4. Zara Sales
-- Evaluated campaign effectiveness and conversion rates
+- The Zara sales dataset contains product-level sales information across time and store locations, including product details, pricing, and sales volume for analysis.
 - Used aggregations, subqueries, and ranking functions
