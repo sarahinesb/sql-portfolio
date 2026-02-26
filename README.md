@@ -12,8 +12,8 @@ This repository contains SQL projects demonstrating data analysis and database d
 - The Customer Spending dataset contains data on customer demographics, income levels, spending patterns, and purchasing behavior. It is designed to support data analysis, predictive modeling, and customer segmentation projects.
 - Used SQL to:  Used SQL to: Analyze average income and spending by gender. Create and join a continent lookup table. Compare average income by continent and income level vs purchase frequency. Evaluate education level vs income groups. Analyze education vs purchase frequency. Segment customers by age groups. Identify top 10 countries by average spending. Perform customer segmentation. Conduct generational analysis. 
 
-### 3. Global Ads / Case Study
-- Evaluated campaign effectiveness and conversion rates
+### 3. Global Ads Performance (Google, Meta, TikTok) / Case Study
+- This dataset contains campaign-level advertising performance data from Google Ads, Meta Ads, and TikTok Ads. It is used for marketing analytics, performance optimization, budget allocation, and platform comparison analysis.
 - Used aggregations, subqueries, and ranking functions
 
 ### 4. Zara Sales
