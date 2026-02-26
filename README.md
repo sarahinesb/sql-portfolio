@@ -18,4 +18,4 @@ This repository contains SQL projects demonstrating data analysis and database d
 
 ### 4. Zara Sales
 - The Zara sales dataset contains product-level sales information across time and store locations, including product details, pricing, and sales volume for analysis.
-- Used aggregations, subqueries, and ranking functions
+- Used SQL to: Calculate total revenue and total units sold. Analyze average price, revenue, and volume by product section and category. Identify top-performing products by sales volume and revenue. Compare performance across categories, promotion status, and seasonality. Evaluate product demand, pricing, and marketing effectiveness.
